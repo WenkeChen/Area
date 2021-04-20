@@ -1,28 +1,43 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <v-app>
+      <v-main id="main">
+        <router-view/>
+      </v-main>
+      <v-footer class="mt-5">
+        <v-container>
+          <v-row
+              justify="center"
+              no-gutters
+          >
+            <v-btn
+                href="https://github.com/WenkeChen"
+                target="_blank"
+                icon
+            ><v-icon>mdi-github</v-icon></v-btn>
+
+            <v-col
+                class="text-center overline"
+                cols="12"
+            >
+              鄂ICP备20013173号-1
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-footer>
+    </v-app>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+#main {
+  margin: 0 20px;
 }
 </style>

@@ -1,4 +1,11 @@
-# area
+# Area
+
+## todo
+
+- [ ] Image gallery
+- [ ] Share
+- [ ] Comment
+- [ ] Backend part
 
 ## Project setup
 ```

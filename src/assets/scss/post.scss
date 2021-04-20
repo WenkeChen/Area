@@ -1,0 +1,13 @@
+article{
+  pre {
+    padding: var(--card-padding);
+    overflow: auto;
+    background-color: black;
+    color: white;
+  }
+
+  img, pre {
+    margin-top: var(--card-padding);
+    margin-bottom: var(--card-padding);
+  }
+}

@@ -1,0 +1,15 @@
+@import "variables";
+@import "global";
+@import "post";
+@import "sidebar";
+@import "list";
+
+@media only screen and (min-width: 768px) {
+  #left-aside, #right-aside {
+    position: sticky;
+    top: var(--body-margin-top);
+  }
+  .v-application--wrap {
+    padding-top: var(--body-margin-top);
+  }
+}

@@ -1,0 +1,31 @@
+.v-card {
+  padding: var(--card-padding);
+}
+
+.width-out-of-card, article img, article pre {
+    width: calc(100% + var(--card-padding) * 2);
+    margin-left: calc(var(--card-padding) * -1);
+}
+
+.height-out-of-card {
+  margin-top: calc(var(--card-padding) * -1);
+}
+
+.out-of-card {
+  @extend .width-out-of-card;
+  @extend .height-out-of-card;
+}
+
+.out-of-card.v-responsive {
+  max-width: calc(100% + var(--card-padding) * 2)!important;
+}
+
+.theme--dark {
+  .v-list{
+    background: #121212!important;
+  }
+}
+
+.v-list-item {
+  padding-left: 0!important;
+}
