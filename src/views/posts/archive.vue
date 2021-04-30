@@ -34,7 +34,7 @@
       </div>
     </v-card>
 
-    <div class="text-center">
+    <div class="text-center" v-if="Math.ceil(this.count / this.pageSize) > 1">
       <v-pagination
           v-model="page"
           :length="Math.ceil(this.count / this.pageSize)"

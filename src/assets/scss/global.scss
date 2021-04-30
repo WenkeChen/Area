@@ -19,13 +19,3 @@
 .out-of-card.v-responsive {
   max-width: calc(100% + var(--card-padding) * 2)!important;
 }
-
-.theme--dark {
-  .v-list{
-    background: #121212!important;
-  }
-}
-
-.v-list-item {
-  padding-left: 0!important;
-}

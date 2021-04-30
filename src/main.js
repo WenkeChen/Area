@@ -9,6 +9,8 @@ import vuetify from '@/plugins/vuetify';
 
 import '@/plugins/hljs';
 
+import '@/plugins/vuelidate';
+
 import '@/assets/scss/style.scss' // wk global css
 
 Vue.config.productionTip = false

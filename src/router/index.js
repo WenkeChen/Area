@@ -5,12 +5,44 @@ Vue.use(Router)
 
 export const constantRoutes = [
   {
-    path: '/',
-    component: () => import('@/layout/index'),
-    redirect: '/home',
+    path: '/admin',
+    component: () => import('@/layout/admin'),
+    redirect: '/admin/dashboard',
     children: [
       {
-        path: '/home',
+        path: 'dashboard',
+        name: 'Dashboard',
+        component: () => import('@/views/admin/dashboard')
+      },
+      {
+        path: 'post/management',
+        name: 'PostList',
+        component: () => import('@/views/admin/post/list'),
+      },
+      {
+        path: 'post/new',
+        name: 'PostNew',
+        component: () => import('@/views/admin/post/new'),
+      },
+      {
+        path: 'post/:slug/edit',
+        name: 'PostEdit',
+        component: () => import('@/views/admin/post/edit'),
+      },
+    ]
+  },
+  {
+    path: 'moment',
+    name: 'Moment',
+    component: () => import('@/views/admin/moment')
+  },
+  {
+    path: '/',
+    component: () => import('@/layout/index'),
+    redirect: '',
+    children: [
+      {
+        path: '',
         name: 'Home',
         component: () => import('@/views/posts/index')
       },

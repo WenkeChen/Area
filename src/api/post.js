@@ -22,3 +22,33 @@ export function fetchPostDetails(query) {
         method: 'get',
     })
 }
+
+export function pushPost(data) {
+    return request({
+        url: '/api/admin/posts',
+        method: 'post',
+        data
+    })
+}
+
+export function fetchAdminPostList(query) {
+    return request({
+        url: '/api/admin/posts',
+        method: 'get',
+        params: query
+    })
+}
+
+export function deletePost(query) {
+    return request({
+        url: '/api/admin/posts/' + query.id,
+        method: 'delete',
+    })
+}
+
+export function fetchPostBySlug(query) {
+    return request({
+        url: '/api/admin/posts/' + query.slug,
+        method: 'get',
+    })
+}

@@ -5,11 +5,8 @@
 @import "list";
 
 @media only screen and (min-width: 768px) {
-  #left-aside, #right-aside {
+  .left-aside {
     position: sticky;
     top: var(--body-margin-top);
-  }
-  .v-application--wrap {
-    padding-top: var(--body-margin-top);
   }
 }

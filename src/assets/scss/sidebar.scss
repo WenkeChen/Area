@@ -1,3 +1,13 @@
 .theme--light.v-list, .v-list .theme--light.v-sheet {
   background-color: inherit;
 }
+
+.left-aside {
+  .v-list-item {
+    padding-left: 0!important;
+  }
+
+  .theme--dark.v-list {
+      background: #121212!important;
+  }
+}

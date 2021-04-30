@@ -1,15 +1,13 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+<h1>Category</h1>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
+  name: "category"
 }
 </script>
 
 <style scoped>
+
 </style>
